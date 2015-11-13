@@ -1,6 +1,5 @@
 # Very simple dockerfile
-FROM tfso/server_nodejs_dockerfile:master
-RUN apt-get update && apt-get install -y unoconv default-jre libreoffice-core \
+FROM debian:wheezy
+RUN apt-get update && apt-get install -y nodejs npm unoconv  libreoffice-writer \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
-
