@@ -1,5 +1,5 @@
 # Very simple dockerfile
-FROM ubuntu:trusty
+FROM ubuntu:trusty-20151001
 RUN echo "deb http://us-west-2.ec2.archive.ubuntu.com/ubuntu/ trusty multiverse \n\
 deb http://us-west-2.ec2.archive.ubuntu.com/ubuntu/ trusty-updates multiverse \n\
 deb http://us-west-2.ec2.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse" | tee /etc/apt/sources.list.d/multiverse.list 
