@@ -8,6 +8,6 @@ RUN apt-get update && apt-get install -y nodejs unzip npm wget unoconv libreoffi
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 RUN wget https://github.com/google/fonts/archive/master.zip
-RUN unzip master.zip -j ~/.fonts
+RUN unzip -j master.zip -d ~/.fonts 
 RUN rm -rf master.zip
 RUN fc-cache -f -v
